@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regrssion_Suite" thread-count="1" parallel="tests">
+  <test thread-count="5" name="Test">
+  <groups>
+	    <run>
+		<include name="general_config" />
+		<exclude name="general_config1" />
+	    </run>
+   </groups>
+     <packages>
+      <package name="com.eProtocol.LARS" />   
+   </packages>
+  </test> <!-- Test -->
+</suite> <!-- Regrssion_Suite -->

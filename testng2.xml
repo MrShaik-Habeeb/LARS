@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="1" parallel="tests">
+	
+	<test name="CSU Regression">
+	<parameter name="url" value="https://larsteststack-sql-9036.induseoffice.com/CSULogin.jsp"></parameter>
+	<parameter name="Client" value="CSU"></parameter>
+		<groups>
+			<run>
+				<include name="Internal_Request_Home"  />
+			</run>
+		</groups>
+		<packages >			
+			 <package name="com.eProtocol.LARS" /> 
+			 <package name="com.eProtocol.LARS.Transfer" />
+		</packages>
+	</test>		
+</suite>
+

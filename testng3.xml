@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="1" parallel="tests">
+	
+	 <test name="CSU Regression" preserve-order="true">
+	<parameter name="url" value="https://larsteststack-sql-9036.induseoffice.com/CSULogin.jsp"></parameter>
+	<parameter name="Client" value="CSU"></parameter>
+		<groups>
+		<define name="Requistion-Receipts"></define>
+		
+			<run>
+				<include name="Requistion-Receipts"   />
+				<include name="Requistion-Receipts_Pregnant_Sentinal"/>
+				<include name="Internal_Transfer" />
+			</run>
+			
+		</groups>
+		<packages >			
+			 <package name="com.eProtocol.LARS" /> 
+			 <package name="com.eProtocol.LARS.Transfer" />
+		</packages>
+	</test>
+	
+	<!-- <test name="MPI Regression" preserve-order="true">
+	<parameter name="url" value="https://larsteststack-sql-9036.induseoffice.com/MPILogin.jsp"></parameter>
+	<parameter name="Client" value="MPI"></parameter>
+		<groups>
+			<run>
+				<include name="Requistion-Receipts"  />
+				<include name="Requistion-Receipts_Pregnant_Sentinal"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.eProtocol.LARS" />
+		</packages>
+	</test>	
+	
+	 <test name="Broad Regression">
+	<parameter name="url" value="https://larsteststack-sql-9036.induseoffice.com/BRDLogin.jsp"></parameter>
+	<parameter name="Client" value="BROAD"></parameter>
+		<groups>
+			<run>
+				<include name="Requistion-Receipts"  />
+				<include name="Requistion-Receipts_Pregnant_Sentinal"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.eProtocol.LARS" />
+		</packages>
+	</test>	
+	
+	<test name="Harvard Regression1">
+	<parameter name="url" value= "https://larsteststack-sql-9036.induseoffice.com/HRVDLogin.jsp"></parameter>
+	<parameter name="Client" value="HRVD"></parameter>
+		<groups>
+			<run>
+				<include name="Requistion-Receipts"  />
+				<exclude name="Requistion-Receipts_Pregnant_Sentinal"/>
+			</run>
+		</groups>
+		
+		<packages>
+			<package name="com.eProtocol.LARS" />
+		</packages>
+	</test>		
+	
+	
+	 <test name="MUSC Regression">
+	<parameter name="url" value="https://larsteststack-sql-9036.induseoffice.com/musc"></parameter>
+	<parameter name="Client" value="MUSC"></parameter>
+		<groups>
+			<run>
+				<include name="Requistion-Receipts"  />
+				<include name="Requistion-Receipts_Pregnant_Sentinal"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.eProtocol.LARS" />
+		</packages>
+	</test>	
+	
+	
+	<test name="RUSH Regression">
+	<parameter name="url" value="https://larsteststack-sql-9036.induseoffice.com/rush"></parameter>
+	<parameter name="Client" value="Rush"></parameter>
+		<groups>
+			<run>
+				<include name="Requistion-Receipts"  />
+				<include name="Requistion-Receipts_Pregnant_Sentinal"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.eProtocol.LARS" />
+		</packages>
+	</test>	
+	
+	
+	<test name="incyte Regression1">
+	<parameter name="url" value= "https://larsteststack-sql-9036.induseoffice.com/incyte"></parameter>
+	<parameter name="Client" value="Incyte"></parameter>
+		<groups>
+			<run>
+				<include name="Requistion-Receipts"  />
+				<exclude name="Requistion-Receipts_Pregnant_Sentinal"/>
+			</run>
+		</groups>
+		
+		<packages>
+			<package name="com.eProtocol.LARS" />
+		</packages>
+	</test>
+	
+	<test name="VSC Regression">
+	<parameter name="url" value="https://larsteststack-orcl-9036.induseoffice.com/vsc"></parameter>
+	<parameter name="Client" value="VSC"></parameter>
+		<groups>
+			<run>
+				<include name="Requistion-Receipts"  />
+				<include name="Requistion-Receipts_Pregnant_Sentinal"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.eProtocol.LARS" />
+		</packages>
+	</test>	
+	
+	
+	 <test name="USDA Regression">
+	<parameter name="url" value="https://larsteststack-orcl-9036.induseoffice.com/usda"></parameter>
+	<parameter name="Client" value="USDA"></parameter>
+		<groups>
+			<run>
+				<include name="Requistion-Receipts"  />
+				<include name="Requistion-Receipts_Pregnant_Sentinal"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.eProtocol.LARS" />
+		</packages>
+	</test>	 --> 
+	
+	
+	
+	
+</suite>
+
